@@ -4,6 +4,7 @@
     <h3 v-text="titulo"></h3>
     <p v-text="titulo + new Date().toLocaleString()"></p>
     <span v-if="seen">Mostra isso?</span>
+    <!-- Todos os atributos podem ser linkados com o v-bind, alguns deles possuem modifiers e.g.: disabled -->
     <img v-bind:src="photo.url" v-bind:alt="photo.alt" />
   </div>
 </template>
