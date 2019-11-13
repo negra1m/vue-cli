@@ -6,12 +6,12 @@
 </template>
 
 <script>
-import Tela from "./components/Tela.vue";
+import Screen from "./components/Screen.vue";
 
 export default {
   name: "app",
   components: {
-    Tela
+    Screen
   }
 };
 </script>

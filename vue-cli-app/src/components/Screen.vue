@@ -1,11 +1,11 @@
 <template>
   <div>
     <h1>{{msg}}</h1>
-    <h3 v-text="titulo"></h3>
-    <button v-on:click="changeText">Inverter</button>
+    <h3 v-text="title"></h3>
+    <button v-on:click="changeText">Revert</button>
     <p>{{message}}</p>
-    <p v-text="titulo + new Date().toLocaleString()"></p>
-    <span v-if="seen">Mostra isso?</span>
+    <p v-text="title + new Date().toLocaleString()"></p>
+    <span v-if="seen">Do you want to show this?</span>
     <!-- Todos os atributos podem ser linkados com o v-bind, alguns deles possuem modifiers e.g.: disabled -->
     <img v-bind:src="photo.url" v-bind:alt="photo.alt" />
     <ul class="list">
@@ -19,7 +19,7 @@
 <script>
 //data contem todas as propriedades que serao manipuladas dentro desse mesmo componente
 export default {
-  name: "Tela",
+  name: "Screen",
   methods: {
     changeText() {
       this.message = this.message
@@ -30,7 +30,7 @@ export default {
   },
   data() {
     return {
-      titulo: "Title",
+      title: "Title",
       seen: false,
       message: "My FUCKING EGGS",
       photo: {
