@@ -4,6 +4,9 @@
     <h3 v-text="title"></h3>
     <button v-on:click="changeText">Revert</button>
     <p>{{message}}</p>
+
+    <input v-model="message" />
+
     <p v-text="title + new Date().toLocaleString()"></p>
     <span v-if="seen">Do you want to show this?</span>
     <!-- Todos os atributos podem ser linkados com o v-bind, alguns deles possuem modifiers e.g.: disabled -->
